@@ -27,4 +27,21 @@
 Usage
   ```bash
 python3 waf-hunter.py
+```
+### Install on Kali Linux 
+```bash
+sudo apt update && sudo apt upgrade
+sudo apt install python3 git
+git clone https://github.com/WizSafe/WAF-Hunter.git
+cd WAF-Hunter
+pip3 install -r requirements.txt
+```
+Usage
+
+```bash
+python3 waf-hunter.py
+```
+Example:
+Enter the URL to scan: https://www.example.com
+
 
