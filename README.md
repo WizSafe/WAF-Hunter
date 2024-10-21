@@ -63,10 +63,10 @@ Supported WAFs
 
 WAF-Hunter can detect and attempt to bypass many common WAFs, including:
 
-**✅ ModSecurity (SpiderLabs)**
-**✅ Cloudflare**
-**✅ Sucuri**
-**✅ Akamai**
+**1. Cloudflare**
+**2. Mod Security (SpiderLabs)**
+**3. Sucuri**
+**4. Akamai**
 
 ```And many more...```
 
