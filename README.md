@@ -1,47 +1,75 @@
 # WAF-Hunter
 
-**WAF-Hunter** is an advanced tool designed to detect Web Application Firewalls (WAFs) and retrieve detailed information about them, including their version and provider. It works on both **Termux** and **Kali Linux**, providing a colorful and intuitive user interface with bold fonts and terminal clearing on startup.
+**WAF-Hunter** is an advanced tool developed by **WizSafe Organization** to detect and bypass Web Application Firewalls (WAFs) on websites. This tool integrates with **wafw00f** to detect WAFs and provides various techniques to attempt bypassing them.
+
+![WAF-Hunter Screenshot](screenshot.png)  <!-- Add a relevant screenshot link -->
 
 ## Features
-- Detect Web Application Firewalls (WAFs) protecting websites.
-- Retrieve WAF version and provider details.
-- Attractive and colorful user interface with bold fonts.
-- Clears the terminal and opens in full-screen mode for a professional appearance.
-- Supports both **Termux** and **Kali Linux** environments.
+- Detects Web Application Firewalls using **wafw00f**.
+- Provides multiple techniques to attempt WAF bypass.
+- Simple and intuitive interface with colorful banners.
+- Supports URL Encoding, Base64 Encoding, Hex Encoding, and more.
+
+## Prerequisites
+
+Before running this tool, ensure you have the following installed:
+
+- **Termux (or Linux environment)**
+- **Python 3**
+- **wafw00f** package
 
 ## Installation
 
-### Requirements
-- Python 3.x
-- `pip` (Python package manager)
-- Internet connection
-
-### Install on Termux
-1. Update packages:
+1. Update and upgrade Termux:
    ```bash
    pkg update && pkg upgrade
-   pkg install python git
-   git clone https://github.com/WizSafe/WAF-Hunter.git
-   cd WAF-Hunter
-   pip install -r requirements.txt
-Usage
-  ```bash
-python3 waf-hunter.py
+
+2. Install Python and necessary dependencies
+
+ ```bash
+pkg install python
+pip install termcolor requests
 ```
-### Install on Kali Linux 
+
+3. Install wafw00f
 ```bash
-sudo apt update && sudo apt upgrade
-sudo apt install python3 git
+pkg install wafw00f
+```
+4. Clone the repository
+```bash
 git clone https://github.com/WizSafe/WAF-Hunter.git
 cd WAF-Hunter
-pip3 install -r requirements.txt
 ```
-Usage
+5. Run The Script
 
 ```bash
-python3 waf-hunter.py
+python waf-hunter.py
 ```
-Example:
-Enter the URL to scan: https://www.example.com
+Usage 
+1. Enter the URL of the website you want to scan for WAFs.
+2. If a WAF is detected, choose whether you want to attempt bypass techniques.
+3. Select from the following WAF bypass techniques:
 
+• URL Encode Payload
+• Case Manipulation
+• String Obfuscation
+• Base64 Encode Payload
+• Hex Encode Payload
+• Use Custom HTTP Method
 
+4. Enter the payload to attempt bypassing the WAF.
+
+Supported WAFs
+
+WAF-Hunter can detect and attempt to bypass many common WAFs, including:
+
+✅ ModSecurity (SpiderLabs)
+✅ Cloudflare
+✅ Sucuri
+✅ Akamai
+And many more...
+
+⚠️Disclaimer⚠️
+
+This tool is intended for educational purposes only. WizSafe Organization does not take responsibility for any misuse of this tool. Use it ethically and only on sites you have permission to test.
+   
