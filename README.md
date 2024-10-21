@@ -50,12 +50,12 @@ Usage
 2. If a WAF is detected, choose whether you want to attempt bypass techniques.
 3. Select from the following WAF bypass techniques:
 
-• URL Encode Payload
-• Case Manipulation
-• String Obfuscation
-• Base64 Encode Payload
-• Hex Encode Payload
-• Use Custom HTTP Method
+**URL Encode Payload**
+**Case Manipulation**
+**String Obfuscation**
+**Base64 Encode Payload**
+**Hex Encode Payload**
+**Use Custom HTTP Method**
 
 4. Enter the payload to attempt bypassing the WAF.
 
@@ -63,11 +63,12 @@ Supported WAFs
 
 WAF-Hunter can detect and attempt to bypass many common WAFs, including:
 
-✅ ModSecurity (SpiderLabs)
-✅ Cloudflare
-✅ Sucuri
-✅ Akamai
-And many more...
+**✅ ModSecurity (SpiderLabs)**
+**✅ Cloudflare**
+**✅ Sucuri**
+**✅ Akamai**
+
+```And many more...```
 
 ⚠️Disclaimer⚠️
 
